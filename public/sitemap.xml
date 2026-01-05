@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <!-- Homepage - Multi-City Tax Consultant -->
+  <!-- Homepage - Tax Consultant Mumbai, Thane, Navi Mumbai, Pune -->
   <url>
     <loc>https://jiyasiyaassociates.com/</loc>
     <lastmod>2026-01-05</lastmod>
@@ -12,15 +12,15 @@
     <priority>1.0</priority>
   </url>
   
-  <!-- Services Section - Available in Mumbai, Thane, Navi Mumbai, Pune -->
+  <!-- Services Section - ITR, GST, Company Registration, MSME Loans -->
   <url>
     <loc>https://jiyasiyaassociates.com/#services</loc>
     <lastmod>2026-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
   
-  <!-- About Section - Serving Maharashtra & India -->
+  <!-- About Section - 15+ Years Experience in Maharashtra -->
   <url>
     <loc>https://jiyasiyaassociates.com/#about</loc>
     <lastmod>2026-01-05</lastmod>
@@ -28,7 +28,7 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- Testimonials Section - Clients from Multiple Cities -->
+  <!-- Testimonials - 500+ Clients Mumbai, Thane, Pune -->
   <url>
     <loc>https://jiyasiyaassociates.com/#testimonials</loc>
     <lastmod>2026-01-05</lastmod>
@@ -41,7 +41,7 @@
     <loc>https://jiyasiyaassociates.com/#contact</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   
 </urlset>

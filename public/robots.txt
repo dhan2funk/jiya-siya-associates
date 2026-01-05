@@ -1,13 +1,24 @@
 # Robots.txt for Jiya Siya Associates
+# Professional Tax Consultant - Mumbai, Thane, Navi Mumbai, Pune
 # https://jiyasiyaassociates.com
 
+# Allow all major search engine crawlers
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
 
+User-agent: Googlebot-Image
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
 
 User-agent: Twitterbot
 Allow: /
@@ -21,12 +32,14 @@ Allow: /
 User-agent: WhatsApp
 Allow: /
 
+User-agent: Pinterest
+Allow: /
+
 User-agent: *
 Allow: /
 
 # Sitemap location
 Sitemap: https://jiyasiyaassociates.com/sitemap.xml
 
-# Disallow paths (none currently, but placeholder for future)
-# Disallow: /admin/
-# Disallow: /private/
+# Host
+Host: https://jiyasiyaassociates.com
