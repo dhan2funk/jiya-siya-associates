@@ -414,7 +414,7 @@ const Index = () => {
               <div className="w-12 h-12 rounded-lg overflow-hidden">
                 <img 
                   src="/lovable-uploads/e5056410-8de6-4fa4-88d2-1ebce0a23f54.png" 
-                  alt="Jiya Siya Associates - Tax Consultant Logo Pune" 
+                  alt="Jiya Siya Associates Logo - Tax Consultant in Mumbai, Thane, Navi Mumbai, Pune" 
                   className="w-full h-full object-contain"
                   width="48"
                   height="48"
@@ -423,7 +423,7 @@ const Index = () => {
               </div>
               <div>
                 <span className="text-xl font-bold text-blue-900">Jiya Siya Associates</span>
-                <p className="text-sm text-muted-foreground">Tax & Finance Consultant</p>
+                <p className="text-sm text-muted-foreground">Tax & Finance Consultant – Mumbai, Thane, Pune</p>
               </div>
             </a>
             <nav className="hidden md:flex space-x-6" role="navigation" aria-label="Main navigation">
