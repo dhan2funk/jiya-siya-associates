@@ -448,16 +448,16 @@ const Index = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
           }}
-          aria-label="Hero section - Tax consultant services in Pune"
+          aria-label="Hero section - Tax consultant services in Mumbai, Thane, Navi Mumbai, Pune"
         >
           <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-6 animate-fade-in">
-                Expert Tax & Finance Solutions for Individuals & Businesses in Pune
+                Expert Tax & Finance Solutions for Individuals & Businesses in India
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">
-                Professional Income Tax Return Filing, GST Registration, Company Registration & More with 15+ Years Experience
+                Professional Income Tax Return Filing, GST Registration, Company Registration & More – Serving Mumbai, Thane, Navi Mumbai, Pune & Pan-India
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
                 <a 
@@ -489,7 +489,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Comprehensive Tax & Finance Services</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Professional tax consultation and financial solutions tailored to individuals and businesses in Pune, Maharashtra
+              Professional tax consultation and financial solutions for individuals and businesses across Mumbai, Thane, Navi Mumbai, Pune & Maharashtra
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list" aria-label="List of services">
@@ -560,14 +560,14 @@ const Index = () => {
       >
         <div className="container mx-auto px-4 relative z-10">
           <article className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">About Jiya Siya Associates - Trusted Tax Consultants in Pune</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">About Jiya Siya Associates - Trusted Tax Consultants in Maharashtra</h2>
             <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-blue-900 mb-4">15+ Years of Excellence in Tax & Financial Services</h3>
               </div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 With over 15 years of dedicated experience in tax consultation and financial services, 
-                Jiya Siya Associates has been helping individuals and businesses across Maharashtra navigate the complex world of 
+                Jiya Siya Associates has been helping individuals and businesses across Mumbai, Thane, Navi Mumbai, Pune, and throughout Maharashtra navigate the complex world of 
                 taxation and compliance. Led by Pravin Rawool, our mission is to provide reliable, efficient, and cost-effective 
                 solutions that help our clients focus on what they do best - growing their business.
               </p>
@@ -584,7 +584,7 @@ const Index = () => {
                     <Users className="h-8 w-8 text-blue-600" />
                   </div>
                   <h4 className="font-semibold text-blue-900">500+ Happy Clients</h4>
-                  <p className="text-sm text-muted-foreground">Trusted by businesses and individuals in Pune & Maharashtra</p>
+                  <p className="text-sm text-muted-foreground">Trusted by businesses across Mumbai, Thane, Navi Mumbai, Pune & pan-India</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-purple-100 p-4 rounded-lg mb-4 inline-block" aria-hidden="true">
@@ -604,7 +604,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Client Reviews & Testimonials</h2>
-            <p className="text-xl text-muted-foreground">Trusted by 500+ satisfied clients across Pune & Maharashtra</p>
+            <p className="text-xl text-muted-foreground">Trusted by 500+ satisfied clients across Mumbai, Thane, Navi Mumbai, Pune & Maharashtra</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6" role="list" aria-label="Customer reviews">
             {testimonials.map((testimonial, index) => (
@@ -635,7 +635,7 @@ const Index = () => {
       >
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Need Tax Consultation? Let's Connect!</h2>
-          <p className="text-xl mb-8 opacity-90 text-white">Get expert Income Tax, GST & compliance solutions from Pune's trusted consultants</p>
+          <p className="text-xl mb-8 opacity-90 text-white">Get expert Income Tax, GST & compliance solutions – serving Mumbai, Thane, Navi Mumbai, Pune & across India</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:+917208241591" 
@@ -815,7 +815,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-blue-800 mt-8 pt-8 text-center">
-            <p>&copy; {new Date().getFullYear()} Jiya Siya Associates - Professional Tax Consultant in Pune, Maharashtra. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Jiya Siya Associates - Professional Tax Consultant serving Mumbai, Thane, Navi Mumbai, Pune & Maharashtra. All rights reserved.</p>
             <p className="text-sm mt-2 opacity-80">Income Tax Return | GST Registration | Company Registration | MSME Loans | TDS Services</p>
           </div>
         </div>
