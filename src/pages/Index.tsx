@@ -385,29 +385,48 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Fixed CTA Buttons */}
-      <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-2">
-        <a href="https://wa.me/917208241591" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110">
-          <MessageCircle className="h-6 w-6" />
+      <aside className="fixed bottom-4 right-4 z-50 flex flex-col gap-2" aria-label="Quick contact options">
+        <a 
+          href="https://wa.me/917208241591" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+          aria-label="Contact us on WhatsApp"
+          title="Chat with us on WhatsApp"
+        >
+          <MessageCircle className="h-6 w-6" aria-hidden="true" />
         </a>
-        <a href="tel:+917208241591" className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110">
-          <Phone className="h-6 w-6" />
+        <a 
+          href="tel:+917208241591" 
+          className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+          aria-label="Call us now"
+          title="Call +91 72082 41591"
+        >
+          <Phone className="h-6 w-6" aria-hidden="true" />
         </a>
-      </div>
+      </aside>
 
       {/* Header */}
-      <header className="bg-white shadow-sm border-b sticky top-0 z-40">
+      <header className="bg-white shadow-sm border-b sticky top-0 z-40" role="banner">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
+            <a href="#home" className="flex items-center space-x-3" aria-label="Jiya Siya Associates - Home">
               <div className="w-12 h-12 rounded-lg overflow-hidden">
-                <img src="/lovable-uploads/e5056410-8de6-4fa4-88d2-1ebce0a23f54.png" alt="Jiya Siya Associates Logo" className="w-full h-full object-contain" />
+                <img 
+                  src="/lovable-uploads/e5056410-8de6-4fa4-88d2-1ebce0a23f54.png" 
+                  alt="Jiya Siya Associates - Tax Consultant Logo Pune" 
+                  className="w-full h-full object-contain"
+                  width="48"
+                  height="48"
+                  loading="eager"
+                />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-blue-900">Jiya Siya Associates</h1>
+                <span className="text-xl font-bold text-blue-900">Jiya Siya Associates</span>
                 <p className="text-sm text-muted-foreground">Tax & Finance Consultant</p>
               </div>
-            </div>
-            <nav className="hidden md:flex space-x-6">
+            </a>
+            <nav className="hidden md:flex space-x-6" role="navigation" aria-label="Main navigation">
               <a href="#home" className="text-foreground hover:text-blue-600 transition-colors">Home</a>
               <a href="#services" className="text-foreground hover:text-blue-600 transition-colors">Services</a>
               <a href="#about" className="text-foreground hover:text-blue-600 transition-colors">About</a>
@@ -419,56 +438,68 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section 
-        id="home" 
-        className="relative py-20 bg-gradient-to-br from-blue-50 to-green-50 overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.1), rgba(34, 197, 94, 0.1)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-6 animate-fade-in">
-              Expert Tax & Finance Solutions for Individuals & Businesses
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">
-              Get assistance with Income Tax, GST, Registration, and More!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-              <a href="https://wa.me/917208241591" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
-                <MessageCircle className="inline-block mr-2 h-5 w-5" />
-                Message on WhatsApp
-              </a>
-              <a href="tel:+917208241591" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
-                <Phone className="inline-block mr-2 h-5 w-5" />
-                Call Now
-              </a>
+      <main>
+        <section 
+          id="home" 
+          className="relative py-20 bg-gradient-to-br from-blue-50 to-green-50 overflow-hidden"
+          style={{
+            backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.1), rgba(34, 197, 94, 0.1)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+          aria-label="Hero section - Tax consultant services in Pune"
+        >
+          <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-6 animate-fade-in">
+                Expert Tax & Finance Solutions for Individuals & Businesses in Pune
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">
+                Professional Income Tax Return Filing, GST Registration, Company Registration & More with 15+ Years Experience
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
+                <a 
+                  href="https://wa.me/917208241591" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+                  aria-label="Get free consultation on WhatsApp"
+                >
+                  <MessageCircle className="inline-block mr-2 h-5 w-5" aria-hidden="true" />
+                  Message on WhatsApp
+                </a>
+                <a 
+                  href="tel:+917208241591" 
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+                  aria-label="Call for immediate tax consultation"
+                >
+                  <Phone className="inline-block mr-2 h-5 w-5" aria-hidden="true" />
+                  Call Now
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-background">
+      <section id="services" className="py-20 bg-background" aria-label="Tax and finance services offered">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Comprehensive Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Comprehensive Tax & Finance Services</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Professional tax and finance solutions tailored to your business needs
+              Professional tax consultation and financial solutions tailored to individuals and businesses in Pune, Maharashtra
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list" aria-label="List of services">
             {services.map((service, index) => (
               <Dialog key={index}>
                 <DialogTrigger asChild>
-                  <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-l-4 border-l-blue-600 cursor-pointer">
+                  <Card className="hover:shadow-lg transition-all duration-300 hover:scale-105 border-l-4 border-l-blue-600 cursor-pointer" role="listitem">
                     <CardContent className="p-6">
                       <div className="flex items-center mb-4">
-                        <div className="bg-blue-100 p-3 rounded-lg mr-4">
+                        <div className="bg-blue-100 p-3 rounded-lg mr-4" aria-hidden="true">
                           <service.icon className="h-6 w-6 text-blue-600" />
                         </div>
                         <h3 className="text-lg font-semibold text-blue-900">{service.title}</h3>
@@ -487,20 +518,21 @@ const Index = () => {
                       <Button 
                         onClick={() => handleEnquireNow(service.whatsappText)} 
                         className="w-full bg-green-500 hover:bg-green-600 text-white"
+                        aria-label={`Enquire about ${service.title} on WhatsApp`}
                       >
-                        <MessageCircle className="mr-2 h-4 w-4" />
+                        <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
                         WhatsApp Enquiry
                       </Button>
                       <div className="flex gap-2">
-                        <a href="tel:+917208241591" className="flex-1">
+                        <a href="tel:+917208241591" className="flex-1" aria-label="Call primary number">
                           <Button variant="outline" className="w-full">
-                            <Phone className="mr-2 h-4 w-4" />
+                            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
                             Call Now
                           </Button>
                         </a>
-                        <a href="tel:+919702977288" className="flex-1">
+                        <a href="tel:+919702977288" className="flex-1" aria-label="Call alternate number">
                           <Button variant="outline" className="w-full">
-                            <Phone className="mr-2 h-4 w-4" />
+                            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
                             Call Alt
                           </Button>
                         </a>
@@ -524,37 +556,38 @@ const Index = () => {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
+        aria-label="About our tax consultancy firm"
       >
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">About Jiya Siya Associates</h2>
+          <article className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">About Jiya Siya Associates - Trusted Tax Consultants in Pune</h2>
             <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-8">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-blue-900 mb-4">15 Years of Excellence</h3>
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">15+ Years of Excellence in Tax & Financial Services</h3>
               </div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 With over 15 years of dedicated experience in tax consultation and financial services, 
-                Jiya Siya Associates has been helping individuals and businesses navigate the complex world of 
-                taxation and compliance. Our mission is to provide reliable, efficient, and cost-effective 
+                Jiya Siya Associates has been helping individuals and businesses across Maharashtra navigate the complex world of 
+                taxation and compliance. Led by Pravin Rawool, our mission is to provide reliable, efficient, and cost-effective 
                 solutions that help our clients focus on what they do best - growing their business.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
-                  <div className="bg-green-100 p-4 rounded-lg mb-4 inline-block">
+                  <div className="bg-green-100 p-4 rounded-lg mb-4 inline-block" aria-hidden="true">
                     <CheckCircle className="h-8 w-8 text-green-600" />
                   </div>
                   <h4 className="font-semibold text-blue-900">Certified Professional</h4>
-                  <p className="text-sm text-muted-foreground">Licensed tax consultant with proper certifications</p>
+                  <p className="text-sm text-muted-foreground">Licensed tax consultant with proper certifications in India</p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-blue-100 p-4 rounded-lg mb-4 inline-block">
+                  <div className="bg-blue-100 p-4 rounded-lg mb-4 inline-block" aria-hidden="true">
                     <Users className="h-8 w-8 text-blue-600" />
                   </div>
                   <h4 className="font-semibold text-blue-900">500+ Happy Clients</h4>
-                  <p className="text-sm text-muted-foreground">Trusted by businesses and individuals</p>
+                  <p className="text-sm text-muted-foreground">Trusted by businesses and individuals in Pune & Maharashtra</p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-purple-100 p-4 rounded-lg mb-4 inline-block">
+                  <div className="bg-purple-100 p-4 rounded-lg mb-4 inline-block" aria-hidden="true">
                     <Calendar className="h-8 w-8 text-purple-600" />
                   </div>
                   <h4 className="font-semibold text-blue-900">Timely Service</h4>
@@ -562,26 +595,26 @@ const Index = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-background">
+      <section id="testimonials" className="py-20 bg-background" aria-label="Client testimonials and reviews">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-muted-foreground">Don't just take our word for it</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Client Reviews & Testimonials</h2>
+            <p className="text-xl text-muted-foreground">Trusted by 500+ satisfied clients across Pune & Maharashtra</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" role="list" aria-label="Customer reviews">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="hover:shadow-lg transition-all duration-300" role="listitem">
                 <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />)}
+                  <div className="flex mb-4" role="img" aria-label={`${testimonial.rating} out of 5 stars rating`}>
+                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" aria-hidden="true" />)}
                   </div>
-                  <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
-                  <p className="font-semibold text-blue-900">- {testimonial.name}</p>
+                  <blockquote className="text-muted-foreground mb-4 italic">"{testimonial.text}"</blockquote>
+                  <cite className="font-semibold text-blue-900 not-italic">- {testimonial.name}</cite>
                 </CardContent>
               </Card>
             ))}
@@ -598,22 +631,34 @@ const Index = () => {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
+        aria-label="Contact call to action"
       >
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Have Questions? Let's Connect!</h2>
-          <p className="text-xl mb-8 opacity-90 text-white">Get in touch today for expert tax and finance solutions</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Need Tax Consultation? Let's Connect!</h2>
+          <p className="text-xl mb-8 opacity-90 text-white">Get expert Income Tax, GST & compliance solutions from Pune's trusted consultants</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+917208241591" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
-              <Phone className="inline-block mr-2 h-5 w-5" />
+            <a 
+              href="tel:+917208241591" 
+              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+              aria-label="Call us for tax consultation"
+            >
+              <Phone className="inline-block mr-2 h-5 w-5" aria-hidden="true" />
               Call Now
             </a>
-            <a href="https://wa.me/917208241591" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
-              <MessageCircle className="inline-block mr-2 h-5 w-5" />
+            <a 
+              href="https://wa.me/917208241591" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+              aria-label="Send WhatsApp message for consultation"
+            >
+              <MessageCircle className="inline-block mr-2 h-5 w-5" aria-hidden="true" />
               Message on WhatsApp
             </a>
           </div>
         </div>
       </section>
+      </main>
 
       {/* Ads Dialog */}
       <Dialog open={showAdsDialog} onOpenChange={setShowAdsDialog}>
@@ -710,60 +755,68 @@ const Index = () => {
       </Dialog>
 
       {/* Contact/Footer Section */}
-      <footer id="contact" className="bg-blue-900 text-white py-16">
+      <footer id="contact" className="bg-blue-900 text-white py-16" role="contentinfo">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-              <div className="space-y-3">
+              <h3 className="text-xl font-bold mb-4">Contact Jiya Siya Associates</h3>
+              <address className="space-y-3 not-italic">
                 <div className="flex items-center">
-                  <Phone className="h-5 w-5 mr-3 text-green-400" />
-                  <span>+91 72082 41591</span>
+                  <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
+                  <a href="tel:+917208241591" className="hover:text-green-400 transition-colors">+91 72082 41591</a>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="h-5 w-5 mr-3 text-green-400" />
-                  <span>+91 97029 77288</span>
+                  <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
+                  <a href="tel:+919702977288" className="hover:text-green-400 transition-colors">+91 97029 77288</a>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="h-5 w-5 mr-3 text-green-400" />
-                  <span>jiyasiyaassociates@gmail.com</span>
+                  <Mail className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
+                  <a href="mailto:jiyasiyaassociates@gmail.com" className="hover:text-green-400 transition-colors">jiyasiyaassociates@gmail.com</a>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="h-5 w-5 mr-3 text-green-400" />
-                  <a href="https://maps.app.goo.gl/1tJC7A7EHH5MoWq78" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors flex items-center">
-                    <span className="mr-2">View Location</span>
-                    <ExternalLink className="h-4 w-4" />
+                  <MapPin className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
+                  <a 
+                    href="https://maps.app.goo.gl/1tJC7A7EHH5MoWq78" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-green-400 transition-colors flex items-center"
+                    aria-label="View our office location in Pune on Google Maps"
+                  >
+                    <span className="mr-2">Pune, Maharashtra - View Location</span>
+                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
                   </a>
                 </div>
-              </div>
+              </address>
             </div>
-            <div>
+            <nav aria-label="Footer navigation">
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
               <div className="space-y-2">
-                <a href="#services" className="block hover:text-green-400 transition-colors">Our Services</a>
-                <a href="#about" className="block hover:text-green-400 transition-colors">About Us</a>
-                <a href="#testimonials" className="block hover:text-green-400 transition-colors">Testimonials</a>
-                <a href="#contact" className="block hover:text-green-400 transition-colors">Contact</a>
+                <a href="#services" className="block hover:text-green-400 transition-colors">Tax & Finance Services</a>
+                <a href="#about" className="block hover:text-green-400 transition-colors">About Our Firm</a>
+                <a href="#testimonials" className="block hover:text-green-400 transition-colors">Client Reviews</a>
+                <a href="#contact" className="block hover:text-green-400 transition-colors">Contact Us</a>
                 <button 
                   onClick={() => setShowAdsDialog(true)}
                   className="block hover:text-green-400 transition-colors text-left"
+                  aria-label="Download promotional materials"
                 >
-                  <Image className="inline-block mr-2 h-4 w-4" />
-                  Ads
+                  <Image className="inline-block mr-2 h-4 w-4" aria-hidden="true" />
+                  Promotional Ads
                 </button>
               </div>
-            </div>
+            </nav>
             <div>
               <h3 className="text-xl font-bold mb-4">Business Hours</h3>
               <div className="space-y-2">
-                <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
-                <p>Saturday: 9:00 AM - 5:00 PM</p>
-                <p>Sunday: By Appointment</p>
+                <p><time>Monday - Friday: 10:00 AM - 7:00 PM</time></p>
+                <p><time>Saturday: 10:00 AM - 5:00 PM</time></p>
+                <p>Sunday: By Appointment Only</p>
               </div>
             </div>
           </div>
           <div className="border-t border-blue-800 mt-8 pt-8 text-center">
-            <p>&copy; 2024 Jiya Siya Associates - Tax & Finance Consultant. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Jiya Siya Associates - Professional Tax Consultant in Pune, Maharashtra. All rights reserved.</p>
+            <p className="text-sm mt-2 opacity-80">Income Tax Return | GST Registration | Company Registration | MSME Loans | TDS Services</p>
           </div>
         </div>
       </footer>
