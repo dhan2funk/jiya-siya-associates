@@ -453,9 +453,12 @@ const Index = () => {
           <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-6 animate-fade-in">
-                Expert Tax & Finance Solutions for Individuals & Businesses in India
+              <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-4 animate-fade-in">
+                Jiya Siya Associates
               </h1>
+              <p className="text-2xl md:text-3xl font-semibold text-blue-700 mb-6 animate-fade-in">
+                Expert Tax & Finance Solutions for Individuals & Businesses
+              </p>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">
                 Professional Income Tax Return Filing, GST Registration, Company Registration & More – Serving Mumbai, Thane, Navi Mumbai, Pune & Pan-India
               </p>
