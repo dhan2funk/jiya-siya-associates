@@ -776,13 +776,13 @@ const Index = () => {
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
                   <a 
-                    href="https://maps.app.goo.gl/1tJC7A7EHH5MoWq78" 
+                    href="https://maps.app.goo.gl/KPLvXC78VnjxBdQe9" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="hover:text-green-400 transition-colors flex items-center"
-                    aria-label="View our office location in Pune on Google Maps"
+                    aria-label="View our office location in Mumbai, Pune on Google Maps"
                   >
-                    <span className="mr-2">Pune, Maharashtra - View Location</span>
+                    <span className="mr-2">Mumbai, Pune - View Location</span>
                     <ExternalLink className="h-4 w-4" aria-hidden="true" />
                   </a>
                 </div>
