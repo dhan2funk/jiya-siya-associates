@@ -2,7 +2,7 @@ import { Phone, MessageCircle, FileText, Building, CreditCard, Truck, Shield, Aw
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
@@ -149,7 +149,45 @@ const Index = () => {
     name: "Amit Industries",
     text: "Thanks to the team for helping us with company registration and MSME loan. Great support throughout!",
     rating: 5
+  }, {
+    name: "Sunita Deshmukh",
+    text: "Very knowledgeable team. They helped us with TDS returns and tax planning. Saved us a lot of money!",
+    rating: 5
+  }, {
+    name: "Vikram Mehta",
+    text: "Professional service for our startup registration and GST filing. Quick response and excellent follow-up.",
+    rating: 5
+  }, {
+    name: "Neha Joshi",
+    text: "Been using their services for personal ITR filing for 2 years. Very reliable and trustworthy. Highly recommend!",
+    rating: 5
+  }, {
+    name: "Kiran Traders",
+    text: "Excellent support for our business compliance needs. They handle everything from GST to annual filings seamlessly.",
+    rating: 5
+  }, {
+    name: "Deepak Kulkarni",
+    text: "Got my home loan documentation and tax saving investment planning done perfectly. Great advisory service!",
+    rating: 5
+  }, {
+    name: "Fatima Sheikh",
+    text: "Very helpful with insurance and mutual fund planning. The team explains everything in simple language.",
+    rating: 4
   }];
+
+  const [currentTestimonialPage, setCurrentTestimonialPage] = useState(0);
+  const totalPages = Math.ceil(testimonials.length / 3);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonialPage((prev) => (prev + 1) % totalPages);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [totalPages]);
+
+  const visibleTestimonials = testimonials.slice(currentTestimonialPage * 3, currentTestimonialPage * 3 + 3);
+
+  const googleReviewUrl = "https://www.google.com/search?sca_esv=ae999b120404273d&sxsrf=ANbL-n6ec3ashSAD7XmFQCwEY8rYRqn1_Q:1772437993663&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOZckPlXcrBdhX6tQ1IUUGV7AwtIXg_HI3i6VIuYIdR2dHHLFe5hW6G5hkmlE6IaMKXfkuIoSeWK4vJTMGDBRny6BCFg-yoIBcdgvZVg3ZfoINVyYsg%3D%3D&q=Jiya+Siya+Associates+Reviews&sa=X&ved=2ahUKEwjzs_6H3oCTAxXTdvUHHRgtJUUQ0bkNegQIHhAF&biw=1035&bih=730&dpr=1.25";
 
   const handleEnquireNow = (whatsappText: string) => {
     const phoneNumber = "917208241591";
@@ -610,8 +648,8 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Trusted by 500+ satisfied clients across Mumbai, Thane, Navi Mumbai, Pune & Maharashtra</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6" role="list" aria-label="Customer reviews">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300" role="listitem">
+            {visibleTestimonials.map((testimonial, index) => (
+              <Card key={`${currentTestimonialPage}-${index}`} className="hover:shadow-lg transition-all duration-300 animate-fade-in" role="listitem">
                 <CardContent className="p-6">
                   <div className="flex mb-4" role="img" aria-label={`${testimonial.rating} out of 5 stars rating`}>
                     {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" aria-hidden="true" />)}
@@ -621,6 +659,27 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="flex justify-center items-center mt-8 gap-4">
+            <div className="flex gap-2">
+              {Array.from({ length: totalPages }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentTestimonialPage(i)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${i === currentTestimonialPage ? 'bg-blue-600 scale-125' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`}
+                  aria-label={`Show reviews page ${i + 1}`}
+                />
+              ))}
+            </div>
+            <a
+              href={googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors ml-4"
+            >
+              <Star className="h-5 w-5 fill-current" />
+              Google पर Review दें
+            </a>
           </div>
         </div>
       </section>
