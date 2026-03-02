@@ -187,7 +187,7 @@ const Index = () => {
 
   const visibleTestimonials = testimonials.slice(currentTestimonialPage * 3, currentTestimonialPage * 3 + 3);
 
-  const googleReviewUrl = "https://www.google.com/search?sca_esv=ae999b120404273d&sxsrf=ANbL-n6ec3ashSAD7XmFQCwEY8rYRqn1_Q:1772437993663&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOZckPlXcrBdhX6tQ1IUUGV7AwtIXg_HI3i6VIuYIdR2dHHLFe5hW6G5hkmlE6IaMKXfkuIoSeWK4vJTMGDBRny6BCFg-yoIBcdgvZVg3ZfoINVyYsg%3D%3D&q=Jiya+Siya+Associates+Reviews&sa=X&ved=2ahUKEwjzs_6H3oCTAxXTdvUHHRgtJUUQ0bkNegQIHhAF&biw=1035&bih=730&dpr=1.25";
+  const googleReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJ58sEAUuU5zsRz7QyYBW9kZo";
 
   const handleEnquireNow = (whatsappText: string) => {
     const phoneNumber = "917208241591";
