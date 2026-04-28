@@ -25,10 +25,10 @@ const Index = () => {
     },
     {
       icon: Building,
-      title: "Company Registration",
-      description: "Private Limited, LLP, and Partnership registration",
-      details: "We assist in registering your business as Private Limited Company, LLP, Partnership, or Proprietorship. Our services include name approval, documentation, ROC filing, and obtaining all necessary certificates.",
-      whatsappText: "I need to discuss about Company Registration"
+      title: "Firm / Society / Company Formation",
+      description: "Partnership Firm, Society, Pvt Ltd, LLP & Company registration",
+      details: "End-to-end formation services for Partnership Firms, Societies (under Societies Registration Act), Private Limited Companies, LLPs, OPCs and Proprietorships. We handle name approval, drafting of partnership deed/MOA/AOA, documentation, ROC/registrar filing, and all certificates across Kalyan, Dombivli (KDMC), Thane, Mumbai, Navi Mumbai, Pune & Maharashtra.",
+      whatsappText: "I need to discuss about Firm / Society / Company Formation"
     },
     {
       icon: Landmark,
@@ -74,17 +74,17 @@ const Index = () => {
     },
     {
       icon: CreditCard,
-      title: "PAN Card Services",
-      description: "New PAN application and corrections",
-      details: "Get new PAN cards, corrections in existing PAN, duplicate PAN cards, and PAN linking services. We ensure quick processing and delivery of PAN cards with accurate information.",
-      whatsappText: "I need to discuss about PAN Card Services"
+      title: "PAN Card & Passport Services",
+      description: "PAN card and Passport application & assistance",
+      details: "Complete assistance for new PAN card applications, PAN corrections, duplicate PAN, PAN-Aadhaar linking, as well as Passport application (fresh & re-issue), Tatkal Passport, document verification, and appointment booking support for clients in Kalyan, Dombivli, Thane, Mumbai, Navi Mumbai & Pune.",
+      whatsappText: "I need to discuss about PAN Card & Passport Services"
     },
     {
       icon: Briefcase,
-      title: "Labour License",
-      description: "Labour license registration and compliance",
-      details: "Obtain necessary labor licenses for your business including Contract Labour License, Shops & Establishment License, and Factory License. We ensure full compliance with labor laws.",
-      whatsappText: "I need to discuss about Labour License"
+      title: "MSME & Labour Licence",
+      description: "MSME (Udyam) registration and Labour Licence services",
+      details: "Get your MSME / Udyam registration certificate and complete Labour Licence registration including Shops & Establishment License, Contract Labour Licence, and Factory Licence. End-to-end documentation, application filing, and compliance for businesses across Kalyan, Dombivli (KDMC), Thane, Mumbai, Navi Mumbai & Pune.",
+      whatsappText: "I need to discuss about MSME & Labour Licence"
     },
     {
       icon: Award,
@@ -134,20 +134,6 @@ const Index = () => {
       description: "Registrar of Companies annual compliance",
       details: "Ensure ROC compliance with annual return filing, board meeting compliance, maintaining statutory registers, and other MCA requirements for companies.",
       whatsappText: "I need to discuss about ROC Compliance"
-    },
-    {
-      icon: Users,
-      title: "Firm / Society Registration",
-      description: "Partnership firm and society registration services",
-      details: "Complete registration services for Partnership Firms (under Indian Partnership Act) and Societies (under Societies Registration Act) including drafting partnership deed/MOA, name approval, documentation, and registration with concerned authorities in Kalyan, Dombivli, Thane, Mumbai, and across Maharashtra.",
-      whatsappText: "I need to discuss about Firm / Society Registration"
-    },
-    {
-      icon: Calculator,
-      title: "Tally",
-      description: "Tally accounting setup, training & support",
-      details: "Complete Tally services including Tally ERP / Tally Prime installation, company setup, ledger creation, GST configuration, data entry, monthly bookkeeping in Tally, training, and ongoing support for businesses in Kalyan, Dombivli, Thane, Mumbai, and across Maharashtra.",
-      whatsappText: "I need to discuss about Tally services"
     },
     {
       icon: Building,
@@ -218,7 +204,7 @@ const Index = () => {
   const googleReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJ58sEAUuU5zsRz7QyYBW9kZo";
 
   const handleEnquireNow = (whatsappText: string) => {
-    const phoneNumber = "917208241591";
+    const phoneNumber = "919702977288";
     const message = encodeURIComponent(whatsappText);
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
@@ -418,17 +404,11 @@ const Index = () => {
     ctx.font = 'bold 36px Arial';
     ctx.textAlign = 'center';
     
-    // First phone number
+    // Phone number
     ctx.fillStyle = '#10b981';
-    ctx.fillRect(200, contactY + 100, 680, 60);
+    ctx.fillRect(200, contactY + 140, 680, 60);
     ctx.fillStyle = '#ffffff';
-    ctx.fillText('📞 +91 72082 41591', 540, contactY + 140);
-    
-    // Second phone number
-    ctx.fillStyle = '#059669';
-    ctx.fillRect(200, contactY + 180, 680, 60);
-    ctx.fillStyle = '#ffffff';
-    ctx.fillText('📞 +91 97029 77288', 540, contactY + 220);
+    ctx.fillText('📞 +91 97029 77288', 540, contactY + 180);
     
     // WhatsApp message
     ctx.font = '28px Arial';
@@ -453,7 +433,7 @@ const Index = () => {
       {/* Fixed CTA Buttons */}
       <aside className="fixed bottom-4 right-4 z-50 flex flex-col gap-2" aria-label="Quick contact options">
         <a 
-          href="https://wa.me/917208241591" 
+          href="https://wa.me/919702977288" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
@@ -463,10 +443,10 @@ const Index = () => {
           <MessageCircle className="h-6 w-6" aria-hidden="true" />
         </a>
         <a 
-          href="tel:+917208241591" 
+          href="tel:+919702977288" 
           className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
           aria-label="Call us now"
-          title="Call +91 72082 41591"
+          title="Call +91 97029 77288"
         >
           <Phone className="h-6 w-6" aria-hidden="true" />
         </a>
@@ -530,7 +510,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
                 <a 
-                  href="https://wa.me/917208241591" 
+                  href="https://wa.me/919702977288" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
@@ -540,7 +520,7 @@ const Index = () => {
                   Message on WhatsApp
                 </a>
                 <a 
-                  href="tel:+917208241591" 
+                  href="tel:+919702977288" 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
                   aria-label="Call for immediate tax consultation"
                 >
@@ -592,20 +572,12 @@ const Index = () => {
                         <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
                         WhatsApp Enquiry
                       </Button>
-                      <div className="flex gap-2">
-                        <a href="tel:+917208241591" className="flex-1" aria-label="Call primary number">
-                          <Button variant="outline" className="w-full">
-                            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-                            Call Now
-                          </Button>
-                        </a>
-                        <a href="tel:+919702977288" className="flex-1" aria-label="Call alternate number">
-                          <Button variant="outline" className="w-full">
-                            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-                            Call Alt
-                          </Button>
-                        </a>
-                      </div>
+                      <a href="tel:+919702977288" className="w-full" aria-label="Call us">
+                        <Button variant="outline" className="w-full">
+                          <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
+                          Call Now
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </DialogContent>
@@ -728,7 +700,7 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90 text-white">Get expert Income Tax, GST & compliance solutions – serving Mumbai, Thane, Navi Mumbai, Pune & across India</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:+917208241591" 
+              href="tel:+919702977288" 
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
               aria-label="Call us for tax consultation"
             >
@@ -736,7 +708,7 @@ const Index = () => {
               Call Now
             </a>
             <a 
-              href="https://wa.me/917208241591" 
+              href="https://wa.me/919702977288" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
@@ -814,10 +786,6 @@ const Index = () => {
                     <div className="space-y-2">
                       <div className="flex items-center justify-center">
                         <Phone className="h-4 w-4 mr-2 text-green-400" />
-                        <span className="font-bold text-sm">+91 72082 41591</span>
-                      </div>
-                      <div className="flex items-center justify-center">
-                        <Phone className="h-4 w-4 mr-2 text-green-400" />
                         <span className="font-bold text-sm">+91 97029 77288</span>
                       </div>
                     </div>
@@ -851,10 +819,6 @@ const Index = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Contact Jiya Siya Associates</h3>
               <address className="space-y-3 not-italic">
-                <div className="flex items-center">
-                  <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
-                  <a href="tel:+917208241591" className="hover:text-green-400 transition-colors">+91 72082 41591</a>
-                </div>
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
                   <a href="tel:+919702977288" className="hover:text-green-400 transition-colors">+91 97029 77288</a>
