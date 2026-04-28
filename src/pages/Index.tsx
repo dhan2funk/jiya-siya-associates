@@ -134,6 +134,13 @@ const Index = () => {
       description: "Registrar of Companies annual compliance",
       details: "Ensure ROC compliance with annual return filing, board meeting compliance, maintaining statutory registers, and other MCA requirements for companies.",
       whatsappText: "I need to discuss about ROC Compliance"
+    },
+    {
+      icon: Building,
+      title: "RERA Consultant",
+      description: "RERA registration & compliance for builders, agents & projects",
+      details: "Expert RERA (Real Estate Regulatory Authority) consultancy services including MahaRERA project registration, agent registration, RERA compliance, quarterly project updates, extension of project registration, RERA complaint filing, and advisory for builders, developers, and real estate agents in Kalyan, Dombivli, Thane, Mumbai, Navi Mumbai, and across Maharashtra.",
+      whatsappText: "I need to discuss about RERA Consultant services"
     }
   ];
 
