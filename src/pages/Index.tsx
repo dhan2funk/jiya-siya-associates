@@ -25,10 +25,10 @@ const Index = () => {
     },
     {
       icon: Building,
-      title: "Company Registration",
-      description: "Private Limited, LLP, and Partnership registration",
-      details: "We assist in registering your business as Private Limited Company, LLP, Partnership, or Proprietorship. Our services include name approval, documentation, ROC filing, and obtaining all necessary certificates.",
-      whatsappText: "I need to discuss about Company Registration"
+      title: "Firm / Society / Company Formation",
+      description: "Partnership Firm, Society, Pvt Ltd, LLP & Company registration",
+      details: "End-to-end formation services for Partnership Firms, Societies (under Societies Registration Act), Private Limited Companies, LLPs, OPCs and Proprietorships. We handle name approval, drafting of partnership deed/MOA/AOA, documentation, ROC/registrar filing, and all certificates across Kalyan, Dombivli (KDMC), Thane, Mumbai, Navi Mumbai, Pune & Maharashtra.",
+      whatsappText: "I need to discuss about Firm / Society / Company Formation"
     },
     {
       icon: Landmark,
@@ -74,17 +74,17 @@ const Index = () => {
     },
     {
       icon: CreditCard,
-      title: "PAN Card Services",
-      description: "New PAN application and corrections",
-      details: "Get new PAN cards, corrections in existing PAN, duplicate PAN cards, and PAN linking services. We ensure quick processing and delivery of PAN cards with accurate information.",
-      whatsappText: "I need to discuss about PAN Card Services"
+      title: "PAN Card & Passport Services",
+      description: "PAN card and Passport application & assistance",
+      details: "Complete assistance for new PAN card applications, PAN corrections, duplicate PAN, PAN-Aadhaar linking, as well as Passport application (fresh & re-issue), Tatkal Passport, document verification, and appointment booking support for clients in Kalyan, Dombivli, Thane, Mumbai, Navi Mumbai & Pune.",
+      whatsappText: "I need to discuss about PAN Card & Passport Services"
     },
     {
       icon: Briefcase,
-      title: "Labour License",
-      description: "Labour license registration and compliance",
-      details: "Obtain necessary labor licenses for your business including Contract Labour License, Shops & Establishment License, and Factory License. We ensure full compliance with labor laws.",
-      whatsappText: "I need to discuss about Labour License"
+      title: "MSME & Labour Licence",
+      description: "MSME (Udyam) registration and Labour Licence services",
+      details: "Get your MSME / Udyam registration certificate and complete Labour Licence registration including Shops & Establishment License, Contract Labour Licence, and Factory Licence. End-to-end documentation, application filing, and compliance for businesses across Kalyan, Dombivli (KDMC), Thane, Mumbai, Navi Mumbai & Pune.",
+      whatsappText: "I need to discuss about MSME & Labour Licence"
     },
     {
       icon: Award,
@@ -134,20 +134,6 @@ const Index = () => {
       description: "Registrar of Companies annual compliance",
       details: "Ensure ROC compliance with annual return filing, board meeting compliance, maintaining statutory registers, and other MCA requirements for companies.",
       whatsappText: "I need to discuss about ROC Compliance"
-    },
-    {
-      icon: Users,
-      title: "Firm / Society Registration",
-      description: "Partnership firm and society registration services",
-      details: "Complete registration services for Partnership Firms (under Indian Partnership Act) and Societies (under Societies Registration Act) including drafting partnership deed/MOA, name approval, documentation, and registration with concerned authorities in Kalyan, Dombivli, Thane, Mumbai, and across Maharashtra.",
-      whatsappText: "I need to discuss about Firm / Society Registration"
-    },
-    {
-      icon: Calculator,
-      title: "Tally",
-      description: "Tally accounting setup, training & support",
-      details: "Complete Tally services including Tally ERP / Tally Prime installation, company setup, ledger creation, GST configuration, data entry, monthly bookkeeping in Tally, training, and ongoing support for businesses in Kalyan, Dombivli, Thane, Mumbai, and across Maharashtra.",
-      whatsappText: "I need to discuss about Tally services"
     },
     {
       icon: Building,
@@ -592,20 +578,12 @@ const Index = () => {
                         <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
                         WhatsApp Enquiry
                       </Button>
-                      <div className="flex gap-2">
-                        <a href="tel:+919702977288" className="flex-1" aria-label="Call primary number">
-                          <Button variant="outline" className="w-full">
-                            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-                            Call Now
-                          </Button>
-                        </a>
-                        <a href="tel:+919702977288" className="flex-1" aria-label="Call alternate number">
-                          <Button variant="outline" className="w-full">
-                            <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
-                            Call Alt
-                          </Button>
-                        </a>
-                      </div>
+                      <a href="tel:+919702977288" className="w-full" aria-label="Call us">
+                        <Button variant="outline" className="w-full">
+                          <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
+                          Call Now
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </DialogContent>
@@ -816,10 +794,6 @@ const Index = () => {
                         <Phone className="h-4 w-4 mr-2 text-green-400" />
                         <span className="font-bold text-sm">+91 97029 77288</span>
                       </div>
-                      <div className="flex items-center justify-center">
-                        <Phone className="h-4 w-4 mr-2 text-green-400" />
-                        <span className="font-bold text-sm">+91 97029 77288</span>
-                      </div>
                     </div>
                     <p className="text-xs mt-2 opacity-90">WhatsApp Available | Pune, Maharashtra</p>
                     <div className="bg-green-600 text-white px-3 py-2 rounded mt-3">
@@ -851,10 +825,6 @@ const Index = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Contact Jiya Siya Associates</h3>
               <address className="space-y-3 not-italic">
-                <div className="flex items-center">
-                  <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
-                  <a href="tel:+919702977288" className="hover:text-green-400 transition-colors">+91 97029 77288</a>
-                </div>
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
                   <a href="tel:+919702977288" className="hover:text-green-400 transition-colors">+91 97029 77288</a>
