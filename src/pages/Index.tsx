@@ -218,7 +218,7 @@ const Index = () => {
   const googleReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJ58sEAUuU5zsRz7QyYBW9kZo";
 
   const handleEnquireNow = (whatsappText: string) => {
-    const phoneNumber = "917208241591";
+    const phoneNumber = "919702977288";
     const message = encodeURIComponent(whatsappText);
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
@@ -422,7 +422,7 @@ const Index = () => {
     ctx.fillStyle = '#10b981';
     ctx.fillRect(200, contactY + 100, 680, 60);
     ctx.fillStyle = '#ffffff';
-    ctx.fillText('📞 +91 72082 41591', 540, contactY + 140);
+    ctx.fillText('📞 +91 97029 77288', 540, contactY + 140);
     
     // Second phone number
     ctx.fillStyle = '#059669';
@@ -453,7 +453,7 @@ const Index = () => {
       {/* Fixed CTA Buttons */}
       <aside className="fixed bottom-4 right-4 z-50 flex flex-col gap-2" aria-label="Quick contact options">
         <a 
-          href="https://wa.me/917208241591" 
+          href="https://wa.me/919702977288" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
@@ -463,10 +463,10 @@ const Index = () => {
           <MessageCircle className="h-6 w-6" aria-hidden="true" />
         </a>
         <a 
-          href="tel:+917208241591" 
+          href="tel:+919702977288" 
           className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
           aria-label="Call us now"
-          title="Call +91 72082 41591"
+          title="Call +91 97029 77288"
         >
           <Phone className="h-6 w-6" aria-hidden="true" />
         </a>
@@ -530,7 +530,7 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
                 <a 
-                  href="https://wa.me/917208241591" 
+                  href="https://wa.me/919702977288" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
@@ -540,7 +540,7 @@ const Index = () => {
                   Message on WhatsApp
                 </a>
                 <a 
-                  href="tel:+917208241591" 
+                  href="tel:+919702977288" 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
                   aria-label="Call for immediate tax consultation"
                 >
@@ -593,7 +593,7 @@ const Index = () => {
                         WhatsApp Enquiry
                       </Button>
                       <div className="flex gap-2">
-                        <a href="tel:+917208241591" className="flex-1" aria-label="Call primary number">
+                        <a href="tel:+919702977288" className="flex-1" aria-label="Call primary number">
                           <Button variant="outline" className="w-full">
                             <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
                             Call Now
@@ -728,7 +728,7 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90 text-white">Get expert Income Tax, GST & compliance solutions – serving Mumbai, Thane, Navi Mumbai, Pune & across India</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:+917208241591" 
+              href="tel:+919702977288" 
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
               aria-label="Call us for tax consultation"
             >
@@ -736,7 +736,7 @@ const Index = () => {
               Call Now
             </a>
             <a 
-              href="https://wa.me/917208241591" 
+              href="https://wa.me/919702977288" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
@@ -814,7 +814,7 @@ const Index = () => {
                     <div className="space-y-2">
                       <div className="flex items-center justify-center">
                         <Phone className="h-4 w-4 mr-2 text-green-400" />
-                        <span className="font-bold text-sm">+91 72082 41591</span>
+                        <span className="font-bold text-sm">+91 97029 77288</span>
                       </div>
                       <div className="flex items-center justify-center">
                         <Phone className="h-4 w-4 mr-2 text-green-400" />
@@ -853,7 +853,7 @@ const Index = () => {
               <address className="space-y-3 not-italic">
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
-                  <a href="tel:+917208241591" className="hover:text-green-400 transition-colors">+91 72082 41591</a>
+                  <a href="tel:+919702977288" className="hover:text-green-400 transition-colors">+91 97029 77288</a>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 mr-3 text-green-400" aria-hidden="true" />
