@@ -136,11 +136,32 @@ const Index = () => {
       whatsappText: "I need to discuss about ROC Compliance"
     },
     {
+      icon: Users,
+      title: "Firm / Society Registration",
+      description: "Partnership firm and society registration services",
+      details: "Complete registration services for Partnership Firms (under Indian Partnership Act) and Societies (under Societies Registration Act) including drafting partnership deed/MOA, name approval, documentation, and registration with concerned authorities in Kalyan, Dombivli, Thane, Mumbai, and across Maharashtra.",
+      whatsappText: "I need to discuss about Firm / Society Registration"
+    },
+    {
+      icon: Calculator,
+      title: "Tally",
+      description: "Tally accounting setup, training & support",
+      details: "Complete Tally services including Tally ERP / Tally Prime installation, company setup, ledger creation, GST configuration, data entry, monthly bookkeeping in Tally, training, and ongoing support for businesses in Kalyan, Dombivli, Thane, Mumbai, and across Maharashtra.",
+      whatsappText: "I need to discuss about Tally services"
+    },
+    {
       icon: Building,
-      title: "RERA Consultant",
-      description: "RERA registration & compliance for builders, agents & projects",
-      details: "Expert RERA (Real Estate Regulatory Authority) consultancy services including MahaRERA project registration, agent registration, RERA compliance, quarterly project updates, extension of project registration, RERA complaint filing, and advisory for builders, developers, and real estate agents in Kalyan, Dombivli, Thane, Mumbai, Navi Mumbai, and across Maharashtra.",
-      whatsappText: "I need to discuss about RERA Consultant services"
+      title: "RERA Registration",
+      description: "MahaRERA project & agent registration",
+      details: "End-to-end MahaRERA registration services for builders, developers, promoters and real estate agents. We handle project registration, agent registration, document preparation, online application on MahaRERA portal, and approval follow-up across Kalyan, Dombivli, Thane, Mumbai, Navi Mumbai, Pune and Maharashtra.",
+      whatsappText: "I need to discuss about RERA Registration"
+    },
+    {
+      icon: FileCheck,
+      title: "RERA Filing",
+      description: "RERA quarterly updates, extensions & compliance filing",
+      details: "Ongoing RERA compliance and filing services including quarterly project progress updates, annual reports, project extension applications, amendments, RERA return filing, and complaint handling under MahaRERA for builders and real estate agents in Maharashtra.",
+      whatsappText: "I need to discuss about RERA Filing"
     }
   ];
 
