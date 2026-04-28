@@ -404,17 +404,11 @@ const Index = () => {
     ctx.font = 'bold 36px Arial';
     ctx.textAlign = 'center';
     
-    // First phone number
+    // Phone number
     ctx.fillStyle = '#10b981';
-    ctx.fillRect(200, contactY + 100, 680, 60);
+    ctx.fillRect(200, contactY + 140, 680, 60);
     ctx.fillStyle = '#ffffff';
-    ctx.fillText('📞 +91 97029 77288', 540, contactY + 140);
-    
-    // Second phone number
-    ctx.fillStyle = '#059669';
-    ctx.fillRect(200, contactY + 180, 680, 60);
-    ctx.fillStyle = '#ffffff';
-    ctx.fillText('📞 +91 97029 77288', 540, contactY + 220);
+    ctx.fillText('📞 +91 97029 77288', 540, contactY + 180);
     
     // WhatsApp message
     ctx.font = '28px Arial';
