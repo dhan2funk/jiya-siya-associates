@@ -39,7 +39,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://jiyasiyaassociates.com/sitemap.xml
+Sitemap: https://jiyasiya.com/sitemap.xml
 
 # Host
-Host: https://jiyasiyaassociates.com
+Host: https://jiyasiya.com
